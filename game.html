@@ -1,0 +1,80 @@
+<!-- 
+    Author: Nehal Parsekar
+    Roll No: 1942
+    Purpose: Implement UNO game using HTML, CSS and JavaScript
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Uno Game</title>
+    </head>
+    <body>
+        <div class="header">
+            <div class="scoreDiv">
+                <button type="button" id="quitButton" class="quitBtn">
+                    QUIT
+                </button>
+            </div>
+            <div>
+                <p class="title">UNO Game</p>
+            </div>
+            <div class="scoreDiv">
+                <p id="scoreP"></p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="deckArea padding">
+                <div><h3>Deck Area</h3></div>
+                <div class="cardBack">
+                    <div class="imgDiv">
+                        <img
+                            class="cardBackImage"
+                            id="deckImage"
+                            src="./image/cardBack.png"
+                            alt="CardBack"
+                        />
+                    </div>
+                    <button id="drawButton" class="btn"></button>
+                </div>
+            </div>
+            <div class="playersArea">
+                <div id="computerArea" class="computerArea padding">
+                    <div class="unoDiv">
+                        <h1 class="unoText" id="computerUno">UNO</h1>
+                        <h3>Computer Cards</h3>
+                    </div>
+                    <div class="cardsDiv" id="computerCards"></div>
+                </div>
+                <div id="playerArea" class="playerArea padding">
+                    <div class="playerDiv unoDiv">
+                        <h1 class="unoText" id="playerUno">UNO</h1>
+                        <h3 id="playerName"></h3>
+                        <button id="challengeBtn" class="btn">CHALLEGE</button>
+                        <button id="passButton" class="btn">PASS</button>
+                    </div>
+                    <div class="cardsDiv" id="playerCards"></div>
+                </div>
+            </div>
+            <div class="playArea padding">
+                <div>
+                    <h3>Play Area</h3>
+                </div>
+                <div class="playAreaCard">
+                    <div id="playAreaImage">
+                        <button id="startButton" class="btn">START GAME</button>
+                    </div>
+                    <div id="playAreaImage2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h3>&copy; Nehal Parsekar, 1942</h3>
+        </div>
+    </body>
+    <script src="./js/script.js" type="module"></script>
+</html>
